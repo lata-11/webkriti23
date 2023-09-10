@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="author_data.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="nav">
+        <div class="brand_name">Brand</div>
+        <div class="nav_menu">
+          <div class="nav_option1">
+            <a class="nav-options" href="landing_page.html">Home</a>
+          </div>
+          <div class="nav_option2">
+            <a class="nav-options" href="">About us</a>
+          </div>
+          <div class="nav_option3">
+            <a class="nav-options" href="blogs.html">Blogs</a>
+          </div>
+          <div class="nav_option4">
+            <a class="nav-options" href="author_data.html">Author</a>
+          </div>
+        </div>
+        <div class="help_desk">
+          <p>Help desk</p>
+          <a href="gethelp.html"
+            ><img src="./assets/arrow.png" alt="" class="ico"
+          /></a>
+        </div>
+        <div class="hamburger">
+          <img src="./assets/hamburger.png" alt="" class="ico2 wrap" />
+          <img src="./assets/cross.png" alt="" class="ico3" />
+        </div>
+        <div class="vertical_navbar">
+          <div class="vert_nav_menu">
+            <a href="index.html" class="vert_nav_elems home_vert_nav">Home</a>
+          </div>
+          <div class="vert_nav_menu">
+            <a href="index.html" class="vert_nav_elems home_vert_nav"
+              >About us</a
+            >
+          </div>
+          <div class="vert_nav_menu">
+            <a href="index.html" class="vert_nav_elems home_vert_nav">Blogs</a>
+          </div>
+          <div class="vert_nav_menu">
+            <a href="index.html" class="vert_nav_elems home_vert_nav"
+              >Explore</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="about">
+          <div class="profile">
+            <img
+              src="edit-icon.webp"
+              alt="edit-icon"
+              class="edit-button"
+              onclick="popUp()"
+              id="profilePictureEdit"
+            />
+          </div>
+          <div class="personell_data">
+            <div class="name">
+              <input type="text" id="name_input" placeholder="Morgan" />
+            </div>
+            <div class="slug">
+              <div class="slug_text">Slug:</div>
+              <input type="text" id="slug" />
+            </div>
+            <div class="bio">
+              <div class="bio_text">Bio:</div>
+              <textarea class="data_in" id="bio"> </textarea>
+            </div>
+            <div class="link">
+              <div class="link_text">Link:</div>
+              <input type="text" class="data_in" id="link" />
+            </div>
+          </div>
+        </div>
+        <div class="button_change">
+          <button class="blogs display_button">My Blogs</button>
+          <button class="followers display_button">My Followers</button>
+        </div>
+        <div class="data_blogs">
+          <div class="followers_data">
+            <div class="follower_container">
+              <div class="follower1 follower">
+                <div class="logo">
+                  <i
+                    class="fa-solid fa-circle-user user_logo"
+                    style="color: #ffc700"
+                  ></i>
+                </div>
+                <div class="info">
+                  <div class="name_user">User</div>
+                  <div class="follower_data">
+                    <div class="slug_tag">
+                      <span class="slug_text_small">Slug:</span> /user_2005
+                    </div>
+                    <div class="blog_no"><span>Blogs: </span> 64</div>
+                  </div>
+                </div>
+                <button class="follow">view</button>
+              </div>
+              <div class="follower2 follower">
+                <div class="logo">
+                  <i
+                    class="fa-solid fa-circle-user user_logo"
+                    style="color: #ffc700"
+                  ></i>
+                </div>
+                <div class="info">
+                  <div class="name_user">User</div>
+                  <div class="follower_data">
+                    <div class="slug_tag">
+                      <span class="slug_text_small">Slug:</span> /user_2005
+                    </div>
+                    <div class="blog_no"><span>Blogs: </span> 64</div>
+                  </div>
+                </div>
+                <button class="follow">view</button>
+              </div>
+              <div class="follower3 follower">
+                <div class="logo">
+                  <i
+                    class="fa-solid fa-circle-user user_logo"
+                    style="color: #ffc700"
+                  ></i>
+                </div>
+                <div class="info">
+                  <div class="name_user">User</div>
+                  <div class="follower_data">
+                    <div class="slug_tag">
+                      <span class="slug_text_small">Slug:</span> /user_2005
+                    </div>
+                    <div class="blog_no"><span>Blogs: </span> 64</div>
+                  </div>
+                </div>
+                <button class="follow">view</button>
+              </div>
+              <div class="follower4 follower">
+                <div class="logo">
+                  <i
+                    class="fa-solid fa-circle-user user_logo"
+                    style="color: #ffc700"
+                  ></i>
+                </div>
+                <div class="info">
+                  <div class="name_user">User</div>
+                  <div class="follower_data">
+                    <div class="slug_tag">
+                      <span class="slug_text_small">Slug:</span> /user_2005
+                    </div>
+                    <div class="blog_no"><span>Blogs: </span> 64</div>
+                  </div>
+                </div>
+                <button class="follow">view</button>
+              </div>
+              <div class="follower5 follower">
+                <div class="logo">
+                  <i
+                    class="fa-solid fa-circle-user user_logo"
+                    style="color: #ffc700"
+                  ></i>
+                </div>
+                <div class="info">
+                  <div class="name_user">User</div>
+                  <div class="follower_data">
+                    <div class="slug_tag">
+                      <span class="slug_text_small">Slug:</span> /user_2005
+                    </div>
+                    <div class="blog_no"><span>Blogs: </span> 64</div>
+                  </div>
+                </div>
+                <button class="follow">view</button>
+              </div>
+              <div class="follower6 follower">
+                <div class="logo">
+                  <i
+                    class="fa-solid fa-circle-user user_logo"
+                    style="color: #ffc700"
+                  ></i>
+                </div>
+                <div class="info">
+                  <div class="name_user">User</div>
+                  <div class="follower_data">
+                    <div class="slug_tag">
+                      <span class="slug_text_small">Slug:</span> /user_2005
+                    </div>
+                    <div class="blog_no"><span>Blogs: </span> 64</div>
+                  </div>
+                </div>
+                <button class="follow">view</button>
+              </div>
+              <div class="follower7 follower">
+                <div class="logo">
+                  <i
+                    class="fa-solid fa-circle-user user_logo"
+                    style="color: #ffc700"
+                  ></i>
+                </div>
+                <div class="info">
+                  <div class="name_user">User</div>
+                  <div class="follower_data">
+                    <div class="slug_tag">
+                      <span class="slug_text_small">Slug:</span> /user_2005
+                    </div>
+                    <div class="blog_no"><span>Blogs: </span> 64</div>
+                  </div>
+                </div>
+                <button class="follow">view</button>
+              </div>
+              <div class="follower8 follower">
+                <div class="logo">
+                  <i
+                    class="fa-solid fa-circle-user user_logo"
+                    style="color: #ffc700"
+                  ></i>
+                </div>
+                <div class="info">
+                  <div class="name_user">User</div>
+                  <div class="follower_data">
+                    <div class="slug_tag">
+                      <span class="slug_text_small">Slug:</span> /user_2005
+                    </div>
+                    <div class="blog_no"><span>Blogs: </span> 64</div>
+                  </div>
+                </div>
+                <button class="follow">view</button>
+              </div>
+              <div class="follower9 follower">
+                <div class="logo">
+                  <i
+                    class="fa-solid fa-circle-user user_logo"
+                    style="color: #ffc700"
+                  ></i>
+                </div>
+                <div class="info">
+                  <div class="name_user">User</div>
+                  <div class="follower_data">
+                    <div class="slug_tag">
+                      <span class="slug_text_small">Slug:</span> /user_2005
+                    </div>
+                    <div class="blog_no"><span>Blogs: </span> 64</div>
+                  </div>
+                </div>
+                <button class="follow">view</button>
+              </div>
+              <div class="follower10 follower">
+                <div class="logo">
+                  <i
+                    class="fa-solid fa-circle-user user_logo"
+                    style="color: #ffc700"
+                  ></i>
+                </div>
+                <div class="info">
+                  <div class="name_user">User</div>
+                  <div class="follower_data">
+                    <div class="slug_tag">
+                      <span class="slug_text_small">Slug:</span> /user_2005
+                    </div>
+                    <div class="blog_no"><span>Blogs: </span> 64</div>
+                  </div>
+                </div>
+                <button class="follow">view</button>
+              </div>
+              <div class="follower11 follower">
+                <div class="logo">
+                  <i
+                    class="fa-solid fa-circle-user user_logo"
+                    style="color: #ffc700"
+                  ></i>
+                </div>
+                <div class="info">
+                  <div class="name_user">User</div>
+                  <div class="follower_data">
+                    <div class="slug_tag">
+                      <span class="slug_text_small">Slug:</span> /user_2005
+                    </div>
+                    <div class="blog_no"><span>Blogs: </span> 64</div>
+                  </div>
+                </div>
+                <button class="follow">view</button>
+              </div>
+              <div class="follower12 follower">
+                <div class="logo">
+                  <i
+                    class="fa-solid fa-circle-user user_logo"
+                    style="color: #ffc700"
+                  ></i>
+                </div>
+                <div class="info">
+                  <div class="name_user">User</div>
+                  <div class="follower_data">
+                    <div class="slug_tag">
+                      <span class="slug_text_small">Slug:</span> /user_2005
+                    </div>
+                    <div class="blog_no"><span>Blogs: </span> 64</div>
+                  </div>
+                </div>
+                <button class="follow">view</button>
+              </div>
+              <div class="follower13 follower">
+                <div class="logo">
+                  <i
+                    class="fa-solid fa-circle-user user_logo"
+                    style="color: #ffc700"
+                  ></i>
+                </div>
+                <div class="info">
+                  <div class="name_user">User</div>
+                  <div class="follower_data">
+                    <div class="slug_tag">
+                      <span class="slug_text_small">Slug:</span> /user_2005
+                    </div>
+                    <div class="blog_no"><span>Blogs: </span> 64</div>
+                  </div>
+                </div>
+                <button class="follow">view</button>
+              </div>
+              <div class="follower14 follower">
+                <div class="logo">
+                  <i
+                    class="fa-solid fa-circle-user user_logo"
+                    style="color: #ffc700"
+                  ></i>
+                </div>
+                <div class="info">
+                  <div class="name_user">User</div>
+                  <div class="follower_data">
+                    <div class="slug_tag">
+                      <span class="slug_text_small">Slug:</span> /user_2005
+                    </div>
+                    <div class="blog_no"><span>Blogs: </span> 64</div>
+                  </div>
+                </div>
+                <button class="follow">view</button>
+              </div>
+              <div class="follower15 follower">
+                <div class="logo">
+                  <i
+                    class="fa-solid fa-circle-user user_logo"
+                    style="color: #ffc700"
+                  ></i>
+                </div>
+                <div class="info">
+                  <div class="name_user">User</div>
+                  <div class="follower_data">
+                    <div class="slug_tag">
+                      <span class="slug_text_small">Slug:</span> /user_2005
+                    </div>
+                    <div class="blog_no"><span>Blogs: </span> 64</div>
+                  </div>
+                </div>
+                <button class="follow">view</button>
+              </div>
+            </div>
+          </div>
+          <div class="blog_data">
+            <div class="blogs_container">
+              <div class="user_blog blog1">
+                <div class="blog_desc">
+                  <div class="title">Title</div>
+                  <div class="Brief">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Rem quod vitae deserunt adipisci reiciendis quia sint quasi,
+                    architecto voluptatum quis! Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Culpa ut harum mollitia aut at
+                    ab iusto cupiditate ratione beatae debitis?
+                  </div>
+                  <div class="view">
+                    <div id="view_text">Read more</div>
+                    <div class="caetogry">Technology</div>
+                    <div class="likes">Likes: <span class="like">24</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="user_blog blog2">
+                <div class="blog_desc">
+                  <div class="title">Title</div>
+                  <div class="Brief">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Rem quod vitae deserunt adipisci reiciendis quia sint quasi,
+                    architecto voluptatum quis! Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Culpa ut harum mollitia aut at
+                    ab iusto cupiditate ratione beatae debitis?
+                  </div>
+                  <div class="view">
+                    <div id="view_text">Read more</div>
+                    <div class="caetogry">Technology</div>
+                    <div class="likes">Likes: <span class="like">24</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="user_blog blog3">
+                <div class="blog_desc">
+                  <div class="title">Title</div>
+                  <div class="Brief">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Rem quod vitae deserunt adipisci reiciendis quia sint quasi,
+                    architecto voluptatum quis! Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Culpa ut harum mollitia aut at
+                    ab iusto cupiditate ratione beatae debitis?
+                  </div>
+                  <div class="view">
+                    <div id="view_text">Read more</div>
+                    <div class="caetogry">Technology</div>
+                    <div class="likes">Likes: <span class="like">24</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="user_blog blog4">
+                <div class="blog_desc">
+                  <div class="title">Title</div>
+                  <div class="Brief">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Rem quod vitae deserunt adipisci reiciendis quia sint quasi,
+                    architecto voluptatum quis! Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Culpa ut harum mollitia aut at
+                    ab iusto cupiditate ratione beatae debitis?
+                  </div>
+                  <div class="view">
+                    <div id="view_text">Read more</div>
+                    <div class="caetogry">Technology</div>
+                    <div class="likes">Likes: <span class="like">24</span></div>
+                  </div>
+                </div>
+                <div class="about_blog"></div>
+              </div>
+              <div class="user_blog blog5">
+                <div class="blog_desc">
+                  <div class="title">Title</div>
+                  <div class="Brief">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Rem quod vitae deserunt adipisci reiciendis quia sint quasi,
+                    architecto voluptatum quis! Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Culpa ut harum mollitia aut at
+                    ab iusto cupiditate ratione beatae debitis?
+                  </div>
+                  <div class="view">
+                    <div id="view_text">Read more</div>
+                    <div class="caetogry">Technology</div>
+                    <div class="likes">Likes: <span class="like">24</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="user_blog blog6">
+                <div class="blog_desc">
+                  <div class="title">Title</div>
+                  <div class="Brief">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Rem quod vitae deserunt adipisci reiciendis quia sint quasi,
+                    architecto voluptatum quis! Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Culpa ut harum mollitia aut at
+                    ab iusto cupiditate ratione beatae debitis?
+                  </div>
+                  <div class="view">
+                    <div id="view_text">Read more</div>
+                    <div class="caetogry">Technology</div>
+                    <div class="likes">Likes: <span class="like">24</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="user_blog blog7">
+                <div class="blog_desc">
+                  <div class="title">Title</div>
+                  <div class="Brief">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Rem quod vitae deserunt adipisci reiciendis quia sint quasi,
+                    architecto voluptatum quis! Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Culpa ut harum mollitia aut at
+                    ab iusto cupiditate ratione beatae debitis?
+                  </div>
+                  <div class="view">
+                    <div id="view_text">Read more</div>
+                    <div class="caetogry">Technology</div>
+                    <div class="likes">Likes: <span class="like">24</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="user_blog blog8">
+                <div class="blog_desc">
+                  <div class="title">Title</div>
+                  <div class="Brief">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Rem quod vitae deserunt adipisci reiciendis quia sint quasi,
+                    architecto voluptatum quis! Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Culpa ut harum mollitia aut at
+                    ab iusto cupiditate ratione beatae debitis?
+                  </div>
+                  <div class="view">
+                    <div id="view_text">Read more</div>
+                    <div class="caetogry">Technology</div>
+                    <div class="likes">Likes: <span class="like">24</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="user_blog blog9">
+                <div class="blog_desc">
+                  <div class="title">Title</div>
+                  <div class="Brief">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Rem quod vitae deserunt adipisci reiciendis quia sint quasi,
+                    architecto voluptatum quis! Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Culpa ut harum mollitia aut at
+                    ab iusto cupiditate ratione beatae debitis?
+                  </div>
+                  <div class="view">
+                    <div id="view_text">Read more</div>
+                    <div class="caetogry">Technology</div>
+                    <div class="likes">Likes: <span class="like">24</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="user_blog blog10">
+                <div class="blog_desc">
+                  <div class="title">Title</div>
+                  <div class="Brief">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Rem quod vitae deserunt adipisci reiciendis quia sint quasi,
+                    architecto voluptatum quis! Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Culpa ut harum mollitia aut at
+                    ab iusto cupiditate ratione beatae debitis?
+                  </div>
+                  <div class="view">
+                    <div id="view_text">Read more</div>
+                    <div class="caetogry">Technology</div>
+                    <div class="likes">Likes: <span class="like">24</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main_part4">
+        <div class="div_highlight_text">Brand</div>
+        <div class="meet_the_developers">
+          <div class="dev">
+            <div class="developers">Meet The Developers</div>
+            <div class="dev_box">
+              <div class="dev1 devs"></div>
+              <div class="dev2 devs"></div>
+              <div class="dev3 devs"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pop-up-box">
+      <h1>Change your Profile Picture</h1>
+      <video id="video" autoplay></video>
+      <canvas id="canvas"></canvas>
+      <div class="buttons-container">
+      <button id="start-camera" class="pop-up-buttons">Start Camera</button>
+      <button id="click-photo" class="pop-up-buttons">Click Photo</button>
+      <button id="pictureSaved" onclick="updatePicture()" class="pop-up-buttons">DONE</button>
+      <button id="pictureSaved" onclick="cancel()" class="pop-up-buttons">CANCEL</button>
+    </div></div>
+    <script src="author_data.js"></script>
+    <script src="myProfile.js"></script>
+  </body>
+</html>

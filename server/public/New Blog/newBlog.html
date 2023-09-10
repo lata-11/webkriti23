@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add a Blog</title>
+    <link rel="stylesheet" href="blogRead.css" />
+    <link rel="stylesheet" href="Navstyle.css">
+    <script
+      src="https://kit.fontawesome.com/cc1a2d50a4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="brand_name">Brand</div>
+      <div class="nav_menu">
+        <div class="nav_option1">
+          <a class="nav-options" href="landing_page.html">Home</a>
+        </div>
+        <div class="nav_option2">
+          <a class="nav-options" href="">About us</a>
+        </div>
+        <div class="nav_option3"><a class="nav-options" href="">Blogs</a></div>
+        <div class="nav_option4">
+          <a class="nav-options" href="">Explore</a>
+        </div>
+      </div>
+      <div class="help_desk">
+        <p>Help desk</p>
+        <a href=""><img src="./assets/arrow.png" alt="" class="ico" /></a>
+      </div>
+      <div class="hamburger">
+        <img src="./assets/hamburger.png" alt="" class="ico2 wrap" />
+        <img src="./assets/cross.png" alt="" class="ico3" />
+      </div>
+      <div class="vertical_navbar">
+        <div class="vert_nav_menu">
+          <a href="index.html" class="vert_nav_elems home_vert_nav">Home</a>
+        </div>
+        <div class="vert_nav_menu">
+          <a href="index.html" class="vert_nav_elems home_vert_nav">About us</a>
+        </div>
+        <div class="vert_nav_menu">
+          <a href="index.html" class="vert_nav_elems home_vert_nav">Blogs</a>
+        </div>
+        <div class="vert_nav_menu">
+          <a href="index.html" class="vert_nav_elems home_vert_nav">Explore</a>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <img
+        src="https://source.unsplash.com/1600x900/?blog"
+        alt="Thumbnail"
+        class="thumbnail"
+        />
+        <div class="sub-wrapper">
+          <div class="heading-container">
+            <div class="blog-details">
+              <input type="text" class="blog-title" placeholder="Title of the Blog">
+            </div>
+            <div class="category-wrapper">
+              <input type="text" placeholder="Category" class="category" onchange="updateThumbnail(this.value)">
+            </div>
+          </div>
+          <div class="content-wrapper">
+            <div class="content-box">
+              <textarea class="blog-content" placeholder="Spill your thoughts here..." onkeyup="autoResize()"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="blogRead.js"></script>
+    <script src="nav.js"></script>
+  </body>
+  </html>
+  

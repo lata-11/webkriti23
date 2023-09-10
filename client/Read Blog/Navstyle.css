@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: PT_sans;
+  src: url("./PTSans-Regular.ttf");
+}
+body {
+    margin-top: 9vh;
+  width: 100%;
+  display: flex;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+}
+body::-webkit-scrollbar {
+  width: 0;
+  visibility: hidden;
+}
+.nav {
+  height: 9vh;
+  width: 100%;
+  background-image: linear-gradient(black, black, black, rgb(33, 33, 33));
+
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 4fr 5fr 3fr;
+  justify-content: space-between;
+  align-content: center;
+}
+.brand_name,
+.nav_menu,
+.help_desk {
+  visibility: visible;
+  justify-self: center;
+  align-self: center;
+  height: 90%;
+  width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+.brand_name {
+  margin-left: 2vw;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.nav_menu {
+  height: 100%;
+  font-size: 17px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.nav-options {
+  transition: 0.1s all linear;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+.nav-options:hover {
+  color: #ffc700;
+}
+.vertical_navbar {
+  visibility: hidden;
+  height: 0;
+  filter: opacity(0);
+  width: 100vw;
+  transition: 0.2s all linear;
+  position: absolute;
+  top: 12vh;
+  z-index: 3;
+}
+.visible_verticle_navbar {
+  position: absolute;
+  height: 50vh;
+  width: 100vw;
+  transition: 0.2s all linear;
+  font-family: PT_sans;
+  background-image: linear-gradient(black, black);
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  justify-content: space-around;
+  align-content: stretch;
+  flex-direction: column;
+  visibility: visible;
+  top: 8vh;
+  z-index: 10;
+  filter: opacity(1);
+  font-size: min(5vw, 36px);
+}
+.vert_nav_elems {
+  height: fit-content;
+  width: fit-content;
+  justify-self: center;
+  align-self: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  color: white;
+}
+.vert_nav_elems:active {
+  color: #ffc700;
+}
+.help_desk {
+  margin-right: 4vw;
+  font-size: 16px;
+  color: #ffc700;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  column-gap: 5%;
+}
+.ico {
+  height: 25px;
+}
+.arrow {
+  height: min(3vw, 3vh, 20px);
+}
+.wrap {
+  height: 0px;
+  width: 0px;
+}
+.hamburger,
+.ico2,
+.ico3 {
+  height: 0;
+  width: 0;
+}
+.vert_nav_menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 840px) {
+  .brand_name,
+  .nav_menu,
+  .help_desk {
+    height: 0;
+    width: 0;
+    visibility: collapse;
+  }
+  .hamburger {
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+    left: -3.5vw;
+  }
+  .wrap {
+    height: 32px;
+    width: 32px;
+  }
+  .vert_nav_menu {
+    font-size: min(5vw, 20px);
+  }
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
